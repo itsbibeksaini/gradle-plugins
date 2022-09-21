@@ -7,4 +7,14 @@
  * in the user manual at https://docs.gradle.org/7.2/userguide/multi_project_builds.html
  */
 
+
+
+dependencyResolutionManagement{
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
 rootProject.name = "gradle-plugins"
