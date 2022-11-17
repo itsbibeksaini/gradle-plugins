@@ -1,21 +1,19 @@
-package com.tmsolution.plugins.core
+package com.tmsolution.plugins.kotlin
 
 import com.tmsolution.plugins.core.abstract.AbstractPlugin
 import com.tmsolution.plugins.core.constants.Plugins
-import com.tmsolution.plugins.core.dsl.applyDefaults
+import com.tmsolution.plugins.core.dsl.applyKotlinDefaults
 import org.gradle.api.Project
 
-class CorePlugin : AbstractPlugin() {
+class KotlinPlugin : AbstractPlugin() {
 
     override val includedPlugins: List<String> = listOf(
-        Plugins.RELEASE
+        Plugins.KOTLIN_JVM
     )
 
 
     override val configure: Project.() -> Unit = {
-        subprojects { project ->
-            project.applyDefaults()
-        }
+        applyKotlinDefaults()
     }
 
 }
