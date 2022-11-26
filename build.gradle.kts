@@ -11,6 +11,7 @@ subprojects{
     apply{
         plugin("com.tmsolution.plugins.kotlin")
         apply(plugin = "maven-publish")
+//        plugin("kotlin")
     }
 
     configure<PublishingExtension>{
