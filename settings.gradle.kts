@@ -21,11 +21,11 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "gradle-plugins"
-include(":core")
-include(":jvm")
-include(":kotlin")
+include(":plugins:core")
+include(":plugins:jvm")
+include(":plugins:kotlin")
 
-//include(":plugins:library-publications")
+include(":plugins:library-publications")
 //include(":plugins:csharp")
 //include(":plugins:npm")
 //include(":plugins:spring")

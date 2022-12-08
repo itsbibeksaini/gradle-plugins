@@ -8,7 +8,8 @@ import org.gradle.api.Project
 class CorePlugin : AbstractPlugin() {
 
     override val includedPlugins: List<String> = listOf(
-        Plugins.RELEASE
+        Plugins.RELEASE,
+        Plugins.SPOTLESS
     )
 
 
@@ -16,6 +17,7 @@ class CorePlugin : AbstractPlugin() {
         subprojects { project ->
             project.applyDefaults()
         }
+
     }
 
 }

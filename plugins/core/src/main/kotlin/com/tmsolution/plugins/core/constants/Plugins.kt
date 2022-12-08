@@ -5,4 +5,5 @@ object Plugins {
     const val KOTLIN_JVM = "org.jetbrains.kotlin.jvm"
     const val SPRING_DEPENDENCY_MANAGEMENT = "io.spring.dependency-management"
     const val RELEASE = "net.researchgate.release"
+    const val SPOTLESS = "com.diffplug.gradle.spotless"
 }

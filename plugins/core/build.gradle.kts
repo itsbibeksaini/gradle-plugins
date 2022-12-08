@@ -8,6 +8,7 @@ dependencies{
     implementation("org.jetbrains.kotlin:kotlin-gradle-plugin")
     implementation("io.spring.gradle:dependency-management-plugin:1.1.0")
     implementation("net.researchgate:gradle-release:3.0.2")
+    implementation("com.diffplug.spotless:spotless-plugin-gradle:6.12.0")
 }
 
 gradlePlugin{
