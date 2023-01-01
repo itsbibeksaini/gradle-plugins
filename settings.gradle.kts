@@ -13,3 +13,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "gradle-plugins"
+
+include(":plugins:core")
